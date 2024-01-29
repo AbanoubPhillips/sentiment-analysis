@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Sentiment Analysis</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1,h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        textarea {
+            min-width: 300px;
+            min-height: 300px;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #020312;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Text Sentiment Analysis</h1>
+    <h2>Enter Text</h2>
+    <form action="/predict-text" method="post">
+        <textarea name="text" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

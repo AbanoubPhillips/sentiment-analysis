@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Sentiment Analysis</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1,h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        textarea {
+            min-height: 50px;
+            width: 50%;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #c4120c;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Youtube Video Sentiment Analysis</h1>
+    <h2>Enter Video Id</h2>
+    <form action="/predict-video" method="post">
+        <textarea name="video" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

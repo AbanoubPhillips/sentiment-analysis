@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Sentiment Analysis Result</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        strong {
+            font-weight: bold;
+            display: inline-block;
+            margin: 0 auto; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Youtube Video Sentiment Analysis Result </h1>
+    <ul>
+        {% for comment, sentiment in zipped_data  %}
+            <li>
+                <p><strong>Text:</strong> {{ comment }}</p>
+                <p><strong>Sentiment:</strong> {{ sentiment }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
